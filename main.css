@@ -1,0 +1,552 @@
+/**********UNIVERSAL STYLES *************/ 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f3f4;
+    color:#0E1717;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/**********HEADER STYLES *************/ 
+
+header {
+ height: 120px;
+ background-color: #fff;
+ border-bottom: 4px solid #D5DBDB;
+ margin-top: 0;
+ margin-bottom: 10px;
+ position: relative;
+    
+}
+
+#logo {
+    height: 75px;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+#desktopNav {
+    display: none;
+}
+
+/**********DROPDOWN NAVAGATION STYLES *************/ 
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left : 90px;
+}
+
+
+.dropdownIcon {
+    width: 30px;
+    height: 5px;
+    background-color: #0E1717;
+    margin: 6px 0;
+}
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid #D5DBDB;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/**********NAVAGATION STYLES *************/ 
+
+
+
+/**********CONTAINER STYLES *************/ 
+
+
+
+#containerDiv {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#handImage {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    height: 150px;
+    width: 300px;
+    margin: 20px 0;
+    border: solid 2px #D5DBDB;
+    border-radius: 6px;
+    position: relative;
+
+}
+
+.card h1 {
+    font-size: 1.5em;
+    
+}
+
+.cardButton {
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}
+
+.cardButton a {
+   font-size: 1.5em;
+   color: #fff;
+   text-decoration: none;
+}
+
+.card div {
+    height: 50px;
+    width: 100px;
+    background-color: #00004d;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+
+.innerContent {
+    padding: 40px;
+}
+
+.points{
+    text-align: left;
+    }
+
+
+
+.teamImage {
+   height: 200px;
+   width: 200px;
+   border: 5px solid #fff;
+   border-radius: 100%; 
+  
+}
+
+.wrapper {
+     background-color: #fff; 
+    padding: 20px;
+        
+    }
+/**********FOOTER STYLES *************/ 
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #00004d;
+    color: #fff;
+    height: 70px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D5DBDB;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+/**********FORM STYLES *************/ 
+
+.formInnerContent h1 {
+    margin-top: -40px;
+}
+
+form {
+    background-color: #D5DBDB;
+    padding: 20px;
+    border-radius: 6px;
+    margin-left: 16px;
+    
+}
+
+#formTitle {
+    margin: 0 auto;  
+    margin-bottom: 20px;
+}
+
+input {
+    height: 30px;
+    margin: 20px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    background-color: #D5DBDB;
+}
+
+input:hover, textarea:hover {
+   background-color: #D5DBDB;
+}
+
+#textareaContainer textarea{
+    margin: 10px 0 20px 0;
+    height: 150px;
+    
+}
+
+input[type="submit"]{
+    outline: none;
+    background-color: #00004d;
+    color: white;
+    border-radius: 6px;
+}
+
+
+
+
+
+/**********MEDIA QUERY STYLES *************/ 
+
+/************* TABLET ************/
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 1.25em;
+    }
+    
+/************FRONT PAGE STYLES **************/
+    
+header {
+ height: 150px;
+    }
+    
+#logo {
+    height: 100px;
+    width: 250px;
+} 
+   
+/* Dropdown Button */
+.dropbtn {
+    height: 80px;
+    width: 80px;
+    left : 200px;
+}
+
+.dropdownIcon {
+    width: 60px;
+    height: 7px;
+    margin: 12px 0;
+}
+
+    
+.dropdown-content {
+    top: 100px;
+    left: 160px;
+    width: 200px;
+    font-size: 1.5em;
+   
+    }
+    
+    
+#handImage {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    
+    }
+
+.card {
+    height: 280px;
+    width: 680px;
+    }
+    
+.card h1 {
+        font-size: 2.25em;
+    }
+    
+.card div {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 0px;
+}
+   
+.cardButton {
+    bottom: 20px;
+    left: 240px;
+    font-size: 1.5em;
+}
+
+
+
+footer {
+    height: 70px;
+    font-size: 1em;
+    }
+
+footer p {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+/************ABOUT PAGE STYLES **************/
+    
+#delivering {
+    text-align: left;
+    background-image: url("images/heartSmall.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 30px;
+    
+    }
+    
+    
+/************THE TEAM PAGE STYLES **************/
+    
+    .teamMember {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 40px;
+    }  
+    
+/************CONTACT PAGE STYLES **************/    
+
+form {
+    width: 500px;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+}
+
+
+#textareaContainer textarea{
+    height: 200px;
+     width: 300px;
+    
+}
+
+#submitMessage {
+    width: 300px;
+    font-size: 1.25em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) { 
+
+/* Dropdown Button */
+.dropbtn {
+    left : 320px;
+}
+ 
+.dropdown-content {
+    left: 280px;
+   
+    }
+}
+
+
+@media only screen and (min-width: 1280px) { 
+    
+header {
+ height: 150px;
+    }
+    
+#logo {
+    height: 120px;
+    width: 400px;
+} 
+   
+/* Dropdown Button */
+.dropbtn {
+    display: none;
+}
+
+.dropdownIcon {
+    display: none;
+}
+ 
+.dropdown-content {
+   display: none;
+   
+    }
+    
+#desktopNav {
+    display: block;
+   
+    } 
+    
+#desktopNav nav  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   
+    } 
+    
+#desktopNav nav ul li {
+    font-size: 1.25em;
+    margin: 40px 20px 20px 0; 
+    border-right: 2px solid #D5DBDB;
+    padding-right: 10px;
+    
+    }
+    
+#desktopNav nav ul li a {
+    text-decoration: none; 
+    color: #0E1717;
+    }
+    
+#desktopNav nav ul li:last-child {
+   border-right: none;     
+    }
+
+    
+#handImage {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+    
+    }
+    
+#containerDiv {
+        display: flex;
+        flex-direction: row;
+    }
+
+.card {
+    width: 290px;
+    height: 200px;
+    font-size: .65em;
+    margin-right: 15px;
+    margin-bottom: 100px;
+    }  
+
+.card div {
+    height: 80px;
+    padding: 10px;
+}
+ .cardButton {
+    bottom: 10px;
+    left: 40px;
+    height: 60px;
+    font-size: 1.5em;
+    
+}   
+    
+/************ABOUT PAGE STYLES **************/
+    
+#delivering {
+    margin-right: 200px;
+    
+    } 
+/************HELP PAGE STYLES **************/    
+
+    .wrapper {
+        padding: 50px;
+    }
+    
+    
+ /************THE TEAM PAGE STYLES **************/
+  
+    
+.meetTheTeamDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }    
+    
+    
+.teamMember {
+    width: 550px;
+    margin-right: 50px;
+    border-radius: 6px;
+    }    
+    
+
+/**********FORM STYLES *************/ 
+
+
+form {
+    width: 800px;
+    font-size: 1em; 
+}
+
+
+input {
+    width: 500px;
+    height: 40px;
+}
+    
+
+#textareaContainer textarea{
+    width: 500px;
+    height: 200px;
+    
+}
+    
+#submitMessage {
+    width: 500px;
+    }    
+    
+
+}
+
