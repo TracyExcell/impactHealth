@@ -190,13 +190,14 @@ header {
 /**********FOOTER STYLES *************/ 
 
 footer {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #00004d;
     color: #fff;
     height: 70px;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1em;
 }
 
@@ -208,6 +209,18 @@ footer a {
 footer a:hover {
     color: #000;
 }
+
+#copyRight {
+    margin: 0;
+    padding-top: 15px;
+    border-right: 2px solid #D5DBDB;
+    border-left: 2px solid #D5DBDB;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+   
+}
+
 
 /**********FORM STYLES *************/ 
 
@@ -323,6 +336,7 @@ header {
 .card div {
     height: 100px;
     width: 200px;
+    padding: 15px;
     margin-bottom: 0px;
 }
    
@@ -332,8 +346,8 @@ header {
     font-size: 1.5em;
 }
 
-
-
+/************FOOTER STYLES **************/
+    
 footer {
     height: 70px;
     font-size: 1em;
@@ -343,16 +357,13 @@ footer p {
     padding-left: 20px;
     padding-right: 20px;
     }
+    
+#copyRight {
+    padding-right: 40px;
+    padding-left: 40px;
+   
+}
 /************ABOUT PAGE STYLES **************/
-    
-#delivering {
-    text-align: left;
-    background-image: url("images/heartSmall.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-right: 30px;
-    
-    }
     
     
 /************THE TEAM PAGE STYLES **************/
@@ -480,27 +491,31 @@ header {
     }  
 
 .card div {
-    height: 80px;
-    padding: 10px;
+    height: 70px;
+    padding: 15px;
 }
  .cardButton {
-    bottom: 10px;
+    bottom: 20px;
     left: 40px;
-    height: 60px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     
 }   
     
 /************ABOUT PAGE STYLES **************/
+
     
 #delivering {
+    text-align: left;
+    background-image: url("images/heartSmall.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
     margin-right: 200px;
     
-    } 
+    }
 /************HELP PAGE STYLES **************/    
 
-    .wrapper {
-        padding: 50px;
+.wrapper {
+    padding: 50px;
     }
     
     
@@ -516,7 +531,7 @@ header {
     
     
 .teamMember {
-    width: 550px;
+    width: 500px;
     margin-right: 50px;
     border-radius: 6px;
     }    
@@ -539,14 +554,20 @@ input {
 
 #textareaContainer textarea{
     width: 500px;
-    height: 200px;
-    
+    height: 200px;   
 }
     
 #submitMessage {
     width: 500px;
+    height: 70px;
     }    
-    
+ 
+/**********FOOTER STYLES *************/     
+#copyRight {
+    padding-right: 150px;
+    padding-left: 150px;
+   
+}
 
 }
 
