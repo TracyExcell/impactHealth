@@ -54,12 +54,15 @@ header {
     left : 90px;
 }
 
+span {
+    display: inline-block;
+
+}
 
 .dropdownIcon {
     width: 30px;
     height: 5px;
-    background-color: #0E1717;
-    margin: 6px 0;
+    background-color: #0E1717;  
 }
 
 
