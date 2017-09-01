@@ -42,6 +42,7 @@ header {
 /* Dropdown Button */
 .dropbtn {
     background-color: #fff;
+    outline: none;
     height: 50px;
     width: 50px;
     color: white;
