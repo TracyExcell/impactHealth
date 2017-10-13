@@ -172,6 +172,15 @@ span {
     padding: 40px;
 }
 
+.moveLeft {
+    text-align: left;
+    font-weight: 800;
+}
+
+.quote {
+    font-style: italic;
+}
+
 .points{
     text-align: left;
     }
@@ -186,11 +195,24 @@ span {
   
 }
 
-.wrapper {
-     background-color: #fff; 
+.teamMember {
+    background-color: #fff;
     padding: 20px;
-        
+    margin-bottom: 40px;
+    } 
+
+.wrapper {
+    background-color: #fff; 
+    padding: 20px;   
     }
+
+.googleMap {
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 240px;
+    width: 240px;
+    text-align: center;
+}
 /**********FOOTER STYLES *************/ 
 
 footer {
@@ -224,7 +246,6 @@ footer a:hover {
     padding-left: 10px;
    
 }
-
 
 /**********FORM STYLES *************/ 
 
@@ -273,6 +294,16 @@ input[type="submit"]{
 }
 
 
+#homePhone img, #cellPhone img, #email img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#homePhone p, #cellPhone p, #email p {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
 
@@ -367,16 +398,8 @@ footer p {
     padding-left: 40px;
    
 }
-/************ABOUT PAGE STYLES **************/
-    
-    
-/************THE TEAM PAGE STYLES **************/
-    
-    .teamMember {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 40px;
-    }  
+
+   
     
 /************CONTACT PAGE STYLES **************/    
 
@@ -400,8 +423,21 @@ input {
     width: 300px;
     font-size: 1.25em;
     }
+    
+.googleMap {
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
 
 }
+
+
+/**********MEDIA QUERY STYLES *************/ 
+
+/************* DESKTOP ************/
 
 @media only screen and (min-width: 1024px) { 
 
@@ -512,7 +548,7 @@ header {
     background-image: url("images/heartSmall.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    margin-right: 200px;
+    margin-right: 140px;
     
     }
 /************HELP PAGE STYLES **************/    
@@ -534,10 +570,11 @@ header {
     
     
 .teamMember {
-    width: 500px;
-    margin-right: 50px;
+    width: 350px;
+    margin-right: 30px;
     border-radius: 6px;
-    }    
+    }   
+    
     
 
 /**********FORM STYLES *************/ 
@@ -565,6 +602,12 @@ input {
     height: 70px;
     }    
  
+.googleMap {
+    height: 500px;
+    width: 500px;
+    
+}
+
 /**********FOOTER STYLES *************/     
 #copyRight {
     padding-right: 150px;
