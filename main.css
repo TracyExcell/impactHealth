@@ -209,8 +209,8 @@ span {
 .googleMap {
     margin-top: 30px;
     margin-left: 20px;
-    height: 240px;
-    width: 240px;
+    height: 200px;
+    width: 200px;
     text-align: center;
 }
 /**********FOOTER STYLES *************/ 
@@ -443,7 +443,7 @@ input {
 
 /* Dropdown Button */
 .dropbtn {
-    left : 320px;
+    left : 350px;
 }
  
 .dropdown-content {
