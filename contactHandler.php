@@ -1,6 +1,6 @@
 <?php
 $errors = '';
-$myEmail = 'jonclow@redmercury.co.nz';  //SETME
+$myEmail = 'excelltracy@gmail.com';  //SETME
 
 function died($error) {
     // Basic error handling and feedback
