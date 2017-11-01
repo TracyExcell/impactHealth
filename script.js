@@ -23,21 +23,21 @@ window.onclick = function(event) {
 
 /*CHECKING THAT THE FORM FIELDS REQUIRED ARE FILLED IN */
 
-function validateForm() {
-    var x = document.forms["messageForm"]["name"].value;
-    var y = document.forms["messageForm"]["user_email-address"].value;
-    if (x == "" && y == "") {
-        alert("Name and email address must be filled in");
-        return false;
-    } else if (y == "") {
-        alert("Email address must be filled in");
-        return false;
-    } else if (x == ""){
-        alert("Name must be filled in");
-        return false;
-    } else {
-        alert("Thank you, your message has been sent");
-        return false;
-    }
-}
+//function validateForm() {
+ //   var x = document.forms["messageForm"]["name"].value;
+  //  var y = document.forms["messageForm"]["user_email-address"].value;
+   // if (x == "" && y == "") {
+   //     alert("Name and email address must be filled in");
+    //    return false;
+   // } else if (y == "") {
+  //      alert("Email address must be filled in");
+   //     return false;
+   // } else if (x == ""){
+   //     alert("Name must be filled in");
+   //     return false;
+  //  } else {
+   //     alert("Thank you, your message has been sent");
+    //    return false;
+  //  }
+//}
     
