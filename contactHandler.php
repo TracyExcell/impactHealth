@@ -24,7 +24,7 @@ $number = stripslashes(trim($_POST['user_homeNumber']));
 $mobile = stripslashes(trim($_POST['user_mobileNumber']));
 
 // Do some basic pattern matching to make sure we are not getting nefarious data
-if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email)) {
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors .= "\n Error: Invalid email address";
 }
 
@@ -41,7 +41,7 @@ if(strlen($errors) > 0) {
     died($errors);
 }
 
-// Everything is passes basic checks, set up and send the email.
+// Everything is passing basic checks, set up and send the email.
 // TODO:  Make an email template and require to script to tidy up this part.
 $headers = "From: $myEmail" . "\r\n" .
 "Reply-To: $email" . "\r\n" .
@@ -55,12 +55,10 @@ $contactMessage = "Name: $name" . "\r\n" .
 
 // Send the email
 //mail($to, $subject, $message, $headers);
-$success = mail($myEmail, $subject, $contactMessage, $headers);
-if (!$success) {
-    $errors = error_get_last()['message'];
-    died("Sorry, there was a server error: $errors");
-    //TODO:  Replace with an error page instead
-    //header("Location: error.php");
+if(mail($myEmail, $subject, $contactMessage, $headers)) {
+    header("Location: success.html");
+} else {
+    header("Location: fail.html");
 }
-header("Location: success.html");
+
 ?>
